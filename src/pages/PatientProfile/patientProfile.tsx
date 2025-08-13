@@ -64,10 +64,11 @@ export default function PatientProfile() {
                         </div>
 
 
-                        <div className='bg-white h-10/24 rounded-2xl shadow-md border-1 border-[#DEE2E6] p-5 text-black'>
+                        <div className='bg-white h-fit rounded-2xl shadow-md border-1 border-[#DEE2E6] p-5 text-black'>
                             <h1 className='text-xl w-full pb-1 border-b-1' >Patient Education</h1>
                             <h2 className='pt-1'>Comming Soon</h2>
-
+                            <div className='h-full flex justify-center'> <img className='h-[20vh]' src="/placeholder.png" alt="/placeholder.png"/></div>
+                           
                         </div>
 
                     </div>
