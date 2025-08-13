@@ -1,1 +1,17 @@
 @import "tailwindcss";
+
+.clickable{
+    @apply  transition-all duration-300;
+}
+
+.clickable:hover{
+    @apply cursor-pointer hover:brightness-120 transition-all duration-300;
+}
+
+.clickableWithScale{
+    @apply  transition-all duration-300;
+}
+
+.clickableWithScale:hover{
+    @apply cursor-pointer hover:brightness-120 transition-all duration-300 scale-105;
+}

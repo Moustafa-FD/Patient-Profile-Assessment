@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
           <Routes>
               <Route path="/" element={<h1>Welcome to the Patient Profile</h1>} />
-              <Route path="/profile" element={<PatientProfile/>} />
+              <Route path="/profile/:id" element={<PatientProfile/>} />
           </Routes>
       </BrowserRouter>
     </>

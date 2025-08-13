@@ -1,3 +1,5 @@
+@import "tailwindcss";
+
 .mainContent{
     background-image: url('./../../assets/background.svg');
     background-size: cover;
@@ -6,4 +8,17 @@
 .hoverEffect:hover{
     transition: 0.3s;
     size: 120%;
+}
+
+.callenderItem{
+    @apply flex flex-col items-center justify-center;
+}
+
+.dividerSmall{
+    @apply border-l-1 border-gray-200 h-1/2
+}
+
+
+.dividerbig{
+    @apply border-1 border-gray-200 h-full;
 }
