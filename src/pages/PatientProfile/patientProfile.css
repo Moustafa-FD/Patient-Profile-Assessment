@@ -1,0 +1,9 @@
+.mainContent{
+    background-image: url('./../../assets/background.svg');
+    background-size: cover;
+}
+
+.hoverEffect:hover{
+    transition: 0.3s;
+    size: 120%;
+}
