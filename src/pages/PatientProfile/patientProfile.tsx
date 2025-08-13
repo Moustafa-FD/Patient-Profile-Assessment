@@ -1,4 +1,4 @@
-import { Pencil, Flame, Circle, CircleCheckBig    } from 'lucide-react';
+import { Flame, Circle, CircleCheckBig    } from 'lucide-react';
 import { useParams } from 'react-router-dom';
 import './patientProfile.css';
 
@@ -13,7 +13,9 @@ export default function PatientProfile() {
         phone: "(555) 555-5555",
         email: "wimtachclient@hotmail.com",
         injury: "Right",
-        diagnosis: "Other specified malgnant neoplasm of skin, unspecified - C4499"
+        diagnosis: "Other specified malgnant neoplasm of skin, unspecified - C4499",
+        sessionPerDate: 5,
+        totalReps: 254
     }
 
 
@@ -26,7 +28,7 @@ export default function PatientProfile() {
 
                 <Header patient={patient}/>
 
-                <div className="mainContent h-4/5 px-10 pt-10 flex flex row gap-30">
+                <div className="mainContent h-4/5 px-10 pt-10 flex flex-row gap-30">
                         
                     <div className='w-2/3 h-full flex flex-col gap-10'>
 
@@ -41,14 +43,14 @@ export default function PatientProfile() {
                                 <div className='flex flex-row gap-h w-full justify-center gap-20 items-center'>
                                     <div className='flex flex-col gap-2 items-center'>
                                         <p>Sessions per Day</p>
-                                        <h1 className='font-bold text-xl'>5</h1>
+                                        <h1 className='font-bold text-xl'>{patient.sessionPerDate ?? "Unavalible"}</h1>
                                     </div>
 
                                     <div className='dividerbig' />
 
                                     <div className='flex flex-col gap-2 items-center'>
                                         <p>Total Reps</p>
-                                        <h1 className='font-bold text-xl'>254</h1>
+                                        <h1 className='font-bold text-xl'>{patient.totalReps ?? "Unavalible"}</h1>
                                     </div>
 
                                 </div>
@@ -72,7 +74,6 @@ export default function PatientProfile() {
 
                     <div className='w-1/3 h-full flex flex-col gap-10'>
 
-                        {/* week card */}
                         <div className='flex flex-row rounded-2xl h-1/3 bg-white rounded-2xl text-[#6c757d] '>
                             <div className='flex flex-col justify-between w-2/3 h-full pb-5'>
                                 <div className='flex flex-row justify-between h-3/12 p-5'>

@@ -1,6 +1,6 @@
 import pfp from './../assets/pfp.jpg';
 import { Pencil } from 'lucide-react';
-{/*  */}
+
 export default function Header(props) {
 
     return (
